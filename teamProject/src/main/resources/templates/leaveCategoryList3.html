@@ -30,7 +30,7 @@ $(document).ready(function(){
 		let leaveCategoryCode = $(this).attr('value');
 		// 비동기 요청
 		$.ajax({
-			url : '/leaveDetailAndPolicyList',
+			url : '/leaveDetail',
 			type : 'get',
 			data : {
 				leaveCategoryCode:leaveCategoryCode
@@ -118,7 +118,7 @@ $(document).ready(function(){
 	<div class="col-3" style="padding-right:20px; border-right: 1px solid #ccc;">
 		<!-- 휴가 카테고리 네비바 -->
 		<div th:each="list : ${leaveCategoryList}">
-			<button class="leaveCategoryButton" th:id="${list.leaveCategoryCode}" th:text="${list.leaveCategorySort}" th:value="${list.leaveCategoryCode}"></button>
+			<button class="leaveCategoryButton btn btn-outline-dark" th:id="${list.leaveCategoryCode}" th:text="${list.leaveCategorySort}" th:value="${list.leaveCategoryCode}"></button>
 		</div>
 	</div>
 	<div class="col-7">

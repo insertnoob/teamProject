@@ -8,6 +8,9 @@ import ksmart31.jjh.leave.domain.LeaveDetail;
 
 @Mapper
 public interface LeaveDetailMapper {
-	// 상세 휴가 리스트 조회
+	// 카테고리 코드별 상세 휴가 리스트 조회
 	public List<LeaveDetail> selectLeaveDetailList(String leaveCategoryCode);
+	
+	// 디테일 코드별 상세 휴가 데이터 조회
+	public LeaveDetail selectLeaveDetail(String leaveDetailCode);
 }
