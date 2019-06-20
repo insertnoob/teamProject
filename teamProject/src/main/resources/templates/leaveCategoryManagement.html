@@ -8,13 +8,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script>
-$(document).ready(function(){
+$(function(){
 	// 카테고리 버튼 클릭 이벤트
 	$('.leaveCategoryButton').click(function(){
 		console.log('카테고리 버튼 테스트 value : '+$(this).attr('value'));
-		// 비동기 요청 시 leaveCategoryCode 별로 상세 휴가를 조회하기 위해 code 값을 담는 변수  
+		// leaveCategoryCode 별로 상세 휴가를 조회하기 위해 code 값을 담는 변수 
 		let leaveCategoryCode = $(this).attr('value');
-		location.href='/leaveCategoryManagement?leaveCategoryCode='+$(this).attr('value')+'';
+		// 동기 요청(get)
+		location.href='/leaveCategoryManagement?leaveCategoryCode='+leaveCategoryCode+'';
 	});
 	// 상세 휴가 버튼 클릭 이벤트
 	$('.leaveDetailButton').click(function(){

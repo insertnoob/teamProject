@@ -10,11 +10,11 @@ public class LeaveHistory {
 	private int leaveHistoryUsedDay;
 	private int leaveHistoryRemainingHour;
 	private int leaveHistoryRemainingDay;
-	private String leave_history_date;
-	private String member_employee_code;
-	private String member_name;
-	private String department_name;
-	private String member_position_name;
+	private String leaveHistoryDate;
+	private String memberEmployeeCode;
+	private String memberName;
+	private String departmentName;
+	private String memberPositionName;
 	public String getLeaveHistoryCode() {
 		return LeaveHistoryCode;
 	}
@@ -69,35 +69,35 @@ public class LeaveHistory {
 	public void setLeaveHistoryRemainingDay(int leaveHistoryRemainingDay) {
 		this.leaveHistoryRemainingDay = leaveHistoryRemainingDay;
 	}
-	public String getLeave_history_date() {
-		return leave_history_date;
+	public String getLeaveHistoryDate() {
+		return leaveHistoryDate;
 	}
-	public void setLeave_history_date(String leave_history_date) {
-		this.leave_history_date = leave_history_date;
+	public void setLeaveHistoryDate(String leaveHistoryDate) {
+		this.leaveHistoryDate = leaveHistoryDate;
 	}
-	public String getMember_employee_code() {
-		return member_employee_code;
+	public String getMemberEmployeeCode() {
+		return memberEmployeeCode;
 	}
-	public void setMember_employee_code(String member_employee_code) {
-		this.member_employee_code = member_employee_code;
+	public void setMemberEmployeeCode(String memberEmployeeCode) {
+		this.memberEmployeeCode = memberEmployeeCode;
 	}
-	public String getMember_name() {
-		return member_name;
+	public String getMemberName() {
+		return memberName;
 	}
-	public void setMember_name(String member_name) {
-		this.member_name = member_name;
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
 	}
-	public String getDepartment_name() {
-		return department_name;
+	public String getDepartmentName() {
+		return departmentName;
 	}
-	public void setDepartment_name(String department_name) {
-		this.department_name = department_name;
+	public void setDepartmentName(String departmentName) {
+		this.departmentName = departmentName;
 	}
-	public String getMember_position_name() {
-		return member_position_name;
+	public String getMemberPositionName() {
+		return memberPositionName;
 	}
-	public void setMember_position_name(String member_position_name) {
-		this.member_position_name = member_position_name;
+	public void setMemberPositionName(String memberPositionName) {
+		this.memberPositionName = memberPositionName;
 	}
 	@Override
 	public String toString() {
@@ -105,9 +105,9 @@ public class LeaveHistory {
 				+ leaveCategorySort + ", leaveHistoryGrantHour=" + leaveHistoryGrantHour + ", leaveHistoryGrantDay="
 				+ leaveHistoryGrantDay + ", leaveHistoryUsedHour=" + leaveHistoryUsedHour + ", leaveHistoryUsedDay="
 				+ leaveHistoryUsedDay + ", leaveHistoryRemainingHour=" + leaveHistoryRemainingHour
-				+ ", leaveHistoryRemainingDay=" + leaveHistoryRemainingDay + ", leave_history_date="
-				+ leave_history_date + ", member_employee_code=" + member_employee_code + ", member_name=" + member_name
-				+ ", department_name=" + department_name + ", member_position_name=" + member_position_name + "]";
+				+ ", leaveHistoryRemainingDay=" + leaveHistoryRemainingDay + ", leaveHistoryDate=" + leaveHistoryDate
+				+ ", memberEmployeeCode=" + memberEmployeeCode + ", memberName=" + memberName + ", departmentName="
+				+ departmentName + ", memberPositionName=" + memberPositionName + "]";
 	}
 	
 }
